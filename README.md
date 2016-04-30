@@ -17,7 +17,7 @@ as `redshift-gtk` instead of `redshift` for a graphical status icon.
 Build status
 ------------
 
-[![Build Status](https://travis-ci.org/jonls/redshift.svg?branch=master)](https://travis-ci.org/jonls/redshift)
+[![Build Status](https://travis-ci.org/danielng01/iris-colors-lite.svg?branch=master)](https://travis-ci.org/danielng01/iris-colors-lite)
 
 Building from source
 --------------------
