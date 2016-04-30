@@ -2,7 +2,7 @@
 Iris colors lite
 ========
 
-Iris colors lite is not Iris. This is open source project for blue light reduction and software brightness started from strach from the Redshift code and different from the Iris core.
+Iris colors lite is not Iris. This is open source project for blue light reduction and software brightness started from strach from the [Redshift](https://github.com/jonls/redshift) code and different from the Iris core.
 
 <img src="https://github.com/danielng01/iris-colors-lite/raw/master/data/iris-gui/iris.png" width="100">
 
