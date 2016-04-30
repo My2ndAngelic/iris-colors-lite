@@ -1,5 +1,5 @@
 # Hidden files
-.*
+# .*
 !.git*
 
 # Backup files
