@@ -1,0 +1,76 @@
+# Hidden files
+.*
+!.git*
+
+# Backup files
+*~
+\#*\#
+
+# Object files
+*.o
+*.ko
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+# *.exe
+*.out
+*.app
+#src/redshift*
+
+# autotools
+/autom4te.cache
+Makefile.in
+Makefile
+stamp-h1
+/config.*
+/ABOUT-NLS
+/aclocal.m4
+/configure
+/depcomp
+/install-sh
+/missing
+/py-compile
+/compile
+*.deps/
+/m4/
+libtool
+ltmain.sh
+
+# generated files
+src/redshift-gtk/defs.py
+src/redshift-gtk/redshift-gtk
+contrib/redshift.spec
+src/redshift
+src/redshift-gtk/__pycache__/
+/data/systemd/redshift.service
+/data/systemd/redshift-gtk.service
+/data/appdata/redshift-gtk.appdata.xml
+/data/applications/redshift.desktop
+/data/applications/redshift-gtk.desktop
+
+*.su
+*.gch
+
+# gettext
+/po/POTFILES
+/po/stamp-po
+/po/stamp-it
+/po/*.gmo
+/po/Makefile.in.in
+/po/Rules-quot
+/po/boldquot.sed
+/po/Makevars.template
+/po/en@boldquot.header
+/po/en@quot.header
+/po/insert-header.sin
+/po/quot.sed
+/po/remove-potcdate.sin
