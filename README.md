@@ -6,7 +6,7 @@ Redshift adjusts the color temperature of your screen according to
 your surroundings. This may help your eyes hurt less if you are
 working in front of the screen at night.
 
-![Redshift logo](http://jonls.dk/assets/redshift-icon-256.png)
+![Redshift logo](https://github.com/danielng01/iris-colors-lite/raw/master/data/iris-gui/iris.png)
 
 Run `redshift -h` for help on command line options. You can run the program
 as `redshift-gtk` instead of `redshift` for a graphical status icon.
