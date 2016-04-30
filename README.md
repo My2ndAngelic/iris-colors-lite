@@ -1,10 +1,8 @@
 
-Redshift
+Iris colors lite
 ========
 
-Redshift adjusts the color temperature of your screen according to
-your surroundings. This may help your eyes hurt less if you are
-working in front of the screen at night.
+Iris colors lite is not Iris. This is open source project for blue light reduction and software brightness started from strach from the Redshift code and different from the Iris core.
 
 <img src="https://github.com/danielng01/iris-colors-lite/raw/master/data/iris-gui/iris.png" width="100">
 
