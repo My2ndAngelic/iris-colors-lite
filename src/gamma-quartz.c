@@ -1,3 +1,5 @@
+/* gamma-quartz.c -- Quartz (OSX) gamma adjustment */
+
 #ifdef HAVE_CONFIG_H
 # include "config.h"
 #endif

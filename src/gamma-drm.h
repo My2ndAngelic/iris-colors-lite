@@ -1,3 +1,5 @@
+/* gamma-drm.h -- DRM gamma adjustment header */
+
 #ifndef REDSHIFT_GAMMA_DRM_H
 #define REDSHIFT_GAMMA_DRM_H
 

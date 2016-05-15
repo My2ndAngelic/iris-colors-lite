@@ -1,3 +1,5 @@
+/* gamma-dummy.c -- No-op gamma adjustment */
+
 #include <stdio.h>
 #include <stdlib.h>
 

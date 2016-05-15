@@ -1,3 +1,5 @@
+/* gamma-quartz.h -- Quartz (OSX) gamma adjustment header */
+
 #ifndef REDSHIFT_GAMMA_QUARTZ_H
 #define REDSHIFT_GAMMA_QUARTZ_H
 

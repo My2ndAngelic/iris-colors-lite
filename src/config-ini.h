@@ -1,3 +1,5 @@
+/* config-ini.h -- INI config file parser header */
+
 #ifndef REDSHIFT_CONFIG_INI_H
 #define REDSHIFT_CONFIG_INI_H
 

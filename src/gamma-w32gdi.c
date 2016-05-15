@@ -1,3 +1,5 @@
+/* gamma-w32gdi.c -- Windows GDI gamma adjustment source */
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,5 @@
+/* gamma-w32gdi.h -- Windows GDI gamma adjustment header */
+
 #ifndef REDSHIFT_GAMMA_W32GDI_H
 #define REDSHIFT_GAMMA_W32GDI_H
 

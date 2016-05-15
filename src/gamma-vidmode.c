@@ -1,3 +1,5 @@
+/* gamma-vidmode.c -- X VidMode gamma adjustment source */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>

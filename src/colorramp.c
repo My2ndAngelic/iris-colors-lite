@@ -1,3 +1,5 @@
+/* colorramp.c -- color temperature calculation source */
+
 #include <stdint.h>
 #include <math.h>
 

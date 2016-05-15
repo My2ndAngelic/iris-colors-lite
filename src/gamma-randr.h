@@ -1,3 +1,5 @@
+/* gamma-randr.h -- X RANDR gamma adjustment header */
+
 #ifndef REDSHIFT_GAMMA_RANDR_H
 #define REDSHIFT_GAMMA_RANDR_H
 

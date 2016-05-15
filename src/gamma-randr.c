@@ -1,3 +1,5 @@
+/* gamma-randr.c -- X RANDR gamma adjustment source */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>

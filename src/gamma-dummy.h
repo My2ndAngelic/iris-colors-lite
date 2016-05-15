@@ -1,3 +1,5 @@
+/* gamma-dummy.h -- No-op gamma adjustment header */
+
 #ifndef REDSHIFT_GAMMA_DUMMY_H
 #define REDSHIFT_GAMMA_DUMMY_H
 

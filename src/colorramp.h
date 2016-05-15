@@ -1,3 +1,5 @@
+/* colorramp.h -- color temperature calculation header */
+
 #ifndef REDSHIFT_COLORRAMP_H
 #define REDSHIFT_COLORRAMP_H
 

@@ -1,3 +1,5 @@
+/* gamma-vidmode.h -- X VidMode gamma adjustment header */
+
 #ifndef REDSHIFT_GAMMA_VIDMODE_H
 #define REDSHIFT_GAMMA_VIDMODE_H
 
