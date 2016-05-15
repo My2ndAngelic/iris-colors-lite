@@ -162,6 +162,23 @@ $ ./configure --disable-drm --disable-randr --disable-vidmode --enable-wingdi \
   --host=x86_64-w64-mingw32
 ```
 
+Compile on Windows with Cygwin
+-------------------------
+For 32-bit builds
+``` shell
+$ ./configure --disable-drm --disable-randr --disable-vidmode --enable-wingdi \
+  --disable-geoclue --disable-gui --disable-ubuntu \
+  --host=mingw32
+```
+
+For 64-bit builds
+``` shell
+$ ./configure --disable-drm --disable-randr --disable-vidmode --enable-wingdi \
+  --disable-geoclue --disable-gui --disable-ubuntu \
+  --host=x86_64-w64-mingw32
+```
+
+
 
 Notes
 -----
