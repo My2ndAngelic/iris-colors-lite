@@ -50,7 +50,10 @@ sigdisable(int signo)
 	disable = 1;
 }
 
-#endif /* ! HAVE_SIGNAL_H || __WIN32__ */
+#else /* ! HAVE_SIGNAL_H || __WIN32__ */
+volatile int exiting = 0;
+volatile int disable = 0;
+#endif
 
 
 int
