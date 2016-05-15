@@ -178,8 +178,6 @@ $ ./configure --disable-drm --disable-randr --disable-vidmode --enable-wingdi \
   --host=x86_64-w64-mingw32
 ```
 
-
-
 Notes
 -----
 * verbose flag is (currently) only held in redshift.c; thus, write all
