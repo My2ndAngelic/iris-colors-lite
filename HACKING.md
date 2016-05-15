@@ -167,14 +167,14 @@ Compile on Windows with Cygwin
 For 32-bit builds
 ``` shell
 $ ./configure --disable-drm --disable-randr --disable-vidmode --enable-wingdi \
-  --disable-geoclue --disable-gui --disable-ubuntu \
+  --disable-geoclue --disable-geoclue2 --disable-gui --disable-ubuntu \
   --host=mingw32
 ```
 
 For 64-bit builds
 ``` shell
 $ ./configure --disable-drm --disable-randr --disable-vidmode --enable-wingdi \
-  --disable-geoclue --disable-gui --disable-ubuntu \
+  --disable-geoclue --disable-geoclue2 --disable-gui --disable-ubuntu \
   --host=x86_64-w64-mingw32
 ```
 
