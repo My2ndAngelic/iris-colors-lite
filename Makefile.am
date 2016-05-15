@@ -77,7 +77,7 @@ endif
 
 
 # man page
-dist_man1_MANS = redshift.1
+dist_man1_MANS = iris-colors-lite.1
 
 
 # Systemd service files
