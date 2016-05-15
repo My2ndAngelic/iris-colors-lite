@@ -9,8 +9,8 @@ Iris colors lite is not Iris. This is open source project for blue light reducti
 Run `redshift -h` for help on command line options. You can run the program
 as `redshift-gtk` instead of `redshift` for a graphical status icon.
 
-* Website: http://jonls.dk/redshift/
-* Project page: https://github.com/jonls/redshift
+* Website: http://iristech.co
+* Project page: https://github.com/danielng01/Iris-Colors-Lite
 
 Build status
 ------------
