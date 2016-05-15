@@ -1,11 +1,11 @@
-.TH REDSHIFT 1 2011-10-01 redshift
+.TH Iris-colors-lite 1
 .SH NAME
-redshift \- set color temperature of display according to time of day
+iris-colors-lite \- set color temperature of display according to time of day
 .SH SYNOPSIS
-.B redshift
+.B iris-colors-lite
 \fI[\-l LAT:LON | \-l PROVIDER:OPTIONS] [\-t DAY:NIGHT] \fR[\fIOPTIONS\fR...]
 .SH DESCRIPTION
-.B redshift
+.B Iris-colors-lite
 adjusts the color temperature of your screen according to your
 surroundings. This may help your eyes hurt less or reduce the risk for
 delayed sleep phase syndrome if you are working in front of the screen
@@ -82,9 +82,9 @@ Default temperature values:
 .IP
 Daytime: 5500K, night: 3500K
 .SH CONFIGURATION FILE
-A configuration file with the name `redshift.conf' can optionally be
+A configuration file with the name `iris-colors-lite.conf' can optionally be
 placed in `~/.config/'. The file has standard INI format. General
-program options are placed under the `redshift' header, while options
+program options are placed under the `iris-colors-lite' header, while options
 for location providers and adjustment methods are placed under a
 header with the name of that provider or method. General options are:
 .TP
@@ -129,15 +129,15 @@ given under the configuration file heading of the same name.
 Options for location providers and adjustment methods can be found in
 the help output of the providers and methods.
 .SH EXAMPLE
-Example for Copenhagen, Denmark:
+Example for Sofia, Bulgaria:
 .IP
-\fB$\fR redshift \-l 55.7:12.6 \-t 5700:3600 \-g 0.8 \-m randr \-v
+\fB$\fR iris-colors-lite \-l 42.6:23.3 \-t 5700:3600 \-g 0.8 \-m randr \-v
 .PP
 An example configuration file with the same effect as the above
 command line:
 .IP
 .nf
-[\fBredshift\fR]
+[\fBiris-colors-lite\fR]
 temp\-day=5700
 temp\-night=3600
 gamma=0.8
@@ -149,13 +149,13 @@ lat=55.7
 lon=12.6
 .fi
 .SH HOOKS
-Executables (e.g. scripts) placed in folder `~/.config/redshift/hooks'
+Executables (e.g. scripts) placed in folder `~/.config/iris-colors-lite/hooks'
 will be run when a certain event happens. The first parameter to the
 script indicates the event and further parameters may indicate
 more details about the event. The event `period-changed' is indicated
 when the period changes (`night', `daytime', `transition'). The second
 parameter is the old period and the third is the new period. The event
-is also signaled when Redshift starts up with the old period set to
+is also signaled when iris-colors-lite starts up with the old period set to
 `none'. Any dotfiles in the folder are skipped.
 
 A simple script to handle these events can be written like this:
@@ -164,20 +164,20 @@ A simple script to handle these events can be written like this:
 #!/bin/sh
 case \fB$1\fR in
     \fBperiod-changed\fR)
-        exec notify-send "Redshift" "Period changed to \fB$3\fR"
+        exec notify-send "iris-colors-lite" "Period changed to \fB$3\fR"
 esac
 .fi
 .SH AUTHOR
-.B redshift
-was written by Jon Lund Steffensen <jonlst@gmail.com>.
+.B Iris-colors-lite
+was written by Daniel Georgiev <daniel@iristech.co> to continue the development of the RedShift project.
 .PP
 Both
-.B redshift
+.B Iris-colors-lite
 and this manual page are released under the GNU General Public
 License, version 3.
 .SH BUGS
-Please report bugs to <https://github.com/jonls/redshift/issues>
+Please report bugs to <https://github.com/danielng01/iris-colors-lite/issues>
 .SH KNOWN ISSUES
-Redshift won't affect the color of your cursor when your graphics driver
+Iris-colors-lite won't affect the color of your cursor when your graphics driver
 is configured to use hardware cursors. Some graphics drivers have an
 option to disable hardware cursors in xorg.conf.
