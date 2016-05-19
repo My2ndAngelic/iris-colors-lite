@@ -11,38 +11,41 @@
 
 ////////////////////////////////////////////////////////////
 /* Location */
-typedef struct {
+typedef struct
+{
 	float lat;
 	float lon;
 } location_t;
 
 ////////////////////////////////////////////////////////////
 /* Periods of day. */
-typedef enum {
+typedef enum
+{
 	PERIOD_NONE = 0,
 	PERIOD_DAYTIME,
 	PERIOD_NIGHT,
 	PERIOD_TRANSITION
 } period_t;
 
+////////////////////////////////////////////////////////////
 /* Color setting */
-typedef struct {
+typedef struct
+{
 	int temperature;
 	float gamma[3];
 	float brightness;
 } color_setting_t;
 
 
+////////////////////////////////////////////////////////////
 /* Gamma adjustment method */
 typedef int gamma_method_init_func(void *state);
 typedef int gamma_method_start_func(void *state);
 typedef void gamma_method_free_func(void *state);
 typedef void gamma_method_print_help_func(FILE *f);
-typedef int gamma_method_set_option_func(void *state, const char *key,
-					 const char *value);
+typedef int gamma_method_set_option_func(void *state, const char *key, const char *value);
 typedef void gamma_method_restore_func(void *state);
-typedef int gamma_method_set_temperature_func(void *state,
-					      const color_setting_t *setting);
+typedef int gamma_method_set_temperature_func(void *state, const color_setting_t *setting);
 
 typedef struct {
 	char *name;
