@@ -1,5 +1,7 @@
+////////////////////////////////////////////////////////////
 /* gamma-drm.c -- DRM gamma adjustment source */
 
+////////////////////////////////////////////////////////////
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -10,6 +12,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+////////////////////////////////////////////////////////////
 #ifdef ENABLE_NLS
 # include <libintl.h>
 # define _(s) gettext(s)
@@ -17,16 +20,18 @@
 # define _(s) s
 #endif
 
+////////////////////////////////////////////////////////////
 #ifndef O_CLOEXEC
   #define O_CLOEXEC  02000000
 #endif
 
+////////////////////////////////////////////////////////////
 #include "gamma-drm.h"
 #include "colorramp.h"
 
 
-int
-drm_init(drm_state_t *state)
+////////////////////////////////////////////////////////////
+int drm_init(drm_state_t *state)
 {
 	/* Initialize state. */
 	state->card_num = 0;
@@ -38,8 +43,8 @@ drm_init(drm_state_t *state)
 	return 0;
 }
 
-int
-drm_start(drm_state_t *state)
+////////////////////////////////////////////////////////////
+int drm_start(drm_state_t *state)
 {
 	/* Acquire access to a graphics card. */
 	long maxlen = strlen(DRM_DIR_NAME) + strlen(DRM_DEV_NAME) + 10;
@@ -154,8 +159,8 @@ drm_start(drm_state_t *state)
 	return 0;
 }
 
-void
-drm_restore(drm_state_t *state)
+////////////////////////////////////////////////////////////
+void drm_restore(drm_state_t *state)
 {
 	drm_crtc_state_t *crtcs = state->crtcs;
 	while (crtcs->crtc_num >= 0) {
@@ -167,8 +172,8 @@ drm_restore(drm_state_t *state)
 	}
 }
 
-void
-drm_free(drm_state_t *state)
+////////////////////////////////////////////////////////////
+void drm_free(drm_state_t *state)
 {
 	if (state->crtcs != NULL) {
 		drm_crtc_state_t *crtcs = state->crtcs;
@@ -203,8 +208,8 @@ drm_print_help(FILE *f)
 	fputs("\n", f);
 }
 
-int
-drm_set_option(drm_state_t *state, const char *key, const char *value)
+////////////////////////////////////////////////////////////
+int drm_set_option(drm_state_t *state, const char *key, const char *value)
 {
 	if (strcasecmp(key, "card") == 0) {
 		state->card_num = atoi(value);
@@ -222,8 +227,8 @@ drm_set_option(drm_state_t *state, const char *key, const char *value)
 	return 0;
 }
 
-int
-drm_set_temperature(drm_state_t *state, const color_setting_t *setting)
+////////////////////////////////////////////////////////////
+int drm_set_temperature(drm_state_t *state, const color_setting_t *setting)
 {
 	drm_crtc_state_t *crtcs = state->crtcs;
 	int last_gamma_size = 0;
@@ -270,3 +275,5 @@ drm_set_temperature(drm_state_t *state, const color_setting_t *setting)
 
 	return 0;
 }
+
+////////////////////////////////////////////////////////////
