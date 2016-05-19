@@ -1,6 +1,9 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
+# For mac
+ACLOCAL_AMFLAGS = -I /usr/local/Cellar/pkg-config/0.29.1/share/aclocal/pkg.m4
+
 AC_PREREQ([2.69])
 AC_INIT([redshift], [1.11], [https://github.com/jonls/redshift/issues])
 AC_CONFIG_SRCDIR([src/redshift.c])
