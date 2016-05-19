@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
-#ifndef REDSHIFT_REDSHIFT_H
-#define REDSHIFT_REDSHIFT_H
+#ifndef IRIS_COLORS_LITE_H
+#define IRIS_COLORS_LITE_H
 ////////////////////////////////////////////////////////////
 /* redshift.h -- Main program header */
 
@@ -47,7 +47,9 @@ typedef int gamma_method_set_option_func(void *state, const char *key, const cha
 typedef void gamma_method_restore_func(void *state);
 typedef int gamma_method_set_temperature_func(void *state, const color_setting_t *setting);
 
-typedef struct {
+////////////////////////////////////////////////////////////
+typedef struct
+{
 	char *name;
 
 	/* If true, this method will be tried if none is explicitly chosen. */
@@ -72,16 +74,18 @@ typedef struct {
 } gamma_method_t;
 
 
+////////////////////////////////////////////////////////////
 /* Location provider */
 typedef int location_provider_init_func(void *state);
 typedef int location_provider_start_func(void *state);
 typedef void location_provider_free_func(void *state);
 typedef void location_provider_print_help_func(FILE *f);
-typedef int location_provider_set_option_func(void *state, const char *key,
-					      const char *value);
+typedef int location_provider_set_option_func(void *state, const char *key, const char *value);
 typedef int location_provider_get_location_func(void *state, location_t *loc);
 
-typedef struct {
+////////////////////////////////////////////////////////////
+typedef struct
+{
 	char *name;
 
 	/* Initialize state. Options can be set between init and start. */
@@ -101,4 +105,6 @@ typedef struct {
 } location_provider_t;
 
 
-#endif /* ! REDSHIFT_REDSHIFT_H */
+////////////////////////////////////////////////////////////
+#endif /* ! IRIS_COLORS_LITE_H */
+////////////////////////////////////////////////////////////
