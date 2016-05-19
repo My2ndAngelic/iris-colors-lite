@@ -29,19 +29,25 @@
 #include "gamma-drm.h"
 #include "colorramp.h"
 
+////////////////////////////////////////////////////////////
+void initialize_state()
+{
+  /* Initialize state. */
+  state->card_num = 0;
+  state->crtc_num = -1;
+  state->fd = -1;
+  state->res = NULL;
+  state->crtcs = NULL;
+}
 
 ////////////////////////////////////////////////////////////
 int drm_init(drm_state_t *state)
 {
-	/* Initialize state. */
-	state->card_num = 0;
-	state->crtc_num = -1;
-	state->fd = -1;
-	state->res = NULL;
-	state->crtcs = NULL;
-
+  initialize_state();
 	return 0;
 }
+
+
 
 ////////////////////////////////////////////////////////////
 int drm_start(drm_state_t *state)
