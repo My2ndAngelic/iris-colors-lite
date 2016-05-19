@@ -1,7 +1,8 @@
+////////////////////////////////////////////////////////////
+#ifndef IRIS_GAMMA_DUMMY_H
+#define IRIS_GAMMA_DUMMY_H
+////////////////////////////////////////////////////////////
 /* gamma-dummy.h -- No-op gamma adjustment header */
-
-#ifndef REDSHIFT_GAMMA_DUMMY_H
-#define REDSHIFT_GAMMA_DUMMY_H
 
 #include "redshift.h"
 
@@ -17,5 +18,6 @@ void gamma_dummy_restore(void *state);
 int gamma_dummy_set_temperature(void *state,
 				const color_setting_t *setting);
 
-
-#endif /* ! REDSHIFT_GAMMA_DUMMY_H */
+////////////////////////////////////////////////////////////
+#endif /* ! IRIS_GAMMA_DUMMY_H */
+////////////////////////////////////////////////////////////
