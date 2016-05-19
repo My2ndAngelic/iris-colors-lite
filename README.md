@@ -9,12 +9,12 @@ Run `redshift -h` for help on command line options. You can run the program
 as `redshift-gtk` instead of `redshift` for a graphical status icon.
 
 * Website: http://iristech.co
-* Project page: https://github.com/danielng01/Iris-Colors-Lite
+* Project page: https://github.com/danielng01/iris-colors-lite
 
 Build status
 ------------
 
-[![Build Status](https://travis-ci.org/danielng01/Iris-Colors-Lite.svg?branch=master)](https://travis-ci.org/danielng01/iris-colors-lite)
+[![Build Status](https://travis-ci.org/danielng01/iris-colors-lite.svg?branch=master)](https://travis-ci.org/danielng01/iris-colors-lite)
 
 Building from source
 --------------------
