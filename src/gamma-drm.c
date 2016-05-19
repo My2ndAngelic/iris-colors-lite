@@ -42,7 +42,7 @@ void initialize_state(drm_state_t *state)
 ////////////////////////////////////////////////////////////
 int drm_init(drm_state_t *state)
 {
-  state = initialize_state(state);
+  initialize_state(state);
 	return 0;
 }
 
