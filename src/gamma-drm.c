@@ -30,23 +30,19 @@
 #include "colorramp.h"
 
 ////////////////////////////////////////////////////////////
-drm_state_t initialize_state()
+void initialize_state(drm_state_t *state)
 {
-  drm_state_t state;
-
-  state.card_num = 0;
-  state.crtc_num = -1;
-  state.fd = -1;
-  state.res = NULL;
-  state.crtcs = NULL;
-
-  return state;
+  state->card_num = 0;
+  state->crtc_num = -1;
+  state->fd = -1;
+  state->res = NULL;
+  state->crtcs = NULL;
 }
 
 ////////////////////////////////////////////////////////////
 int drm_init(drm_state_t *state)
 {
-  state = initialize_state();
+  state = initialize_state(state);
 	return 0;
 }
 
